@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase&display=swap');
+
+.start-quote-screen {
+  position: absolute;
+  font-family: "Cormorant Unicase", serif;
+  background-color: #000000;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.start-quote-screen.disappear{
+  animation: start-screen-disappear 0.75s ease forwards;
+}
+
+@keyframes start-screen-disappear {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  } 98% {
+    opacity: 0;
+    transform: translateX(0);
+  } 100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+.start-quote {
+  color: none;
+  font-size: 7rem;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0 #fff, 0 -1px 0 #fff, 1px -1px 0 #fff, 1px 0 0 #fff,
+    1px 1px 0 #fff, 0 1px 0 #fff, -1px 1px 0 #fff, -1px 0 0 #fff;
+}
+
+.line-text-white {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  color: #fff;
+  animation: white-text 1.25s ease forwards;
+  animation-delay: 2.5s;
+}
+
+@keyframes white-text {
+  100% {
+    opacity: 1;
+  }
+}
+
+.quote-line {
+  line-height: 100px;
+  position: relative;
+}
+
+.quote-line .line-text {
+  line-height: 100px;
+  transform: translateY(100%);
+  animation: line-lift 1.1s ease forwards;
+}
+
+.start-quote .quote-line:nth-child(2) .line-text {
+  animation-delay: 0.1s;
+}
+
+.start-quote .quote-line:nth-child(2) .line-text {
+  animation-delay: 0.2s;
+}
+
+.start-quote .quote-line:nth-child(3) .line-text {
+  animation-delay: 0.3s;
+}
+
+.start-quote .quote-line:nth-child(4) .line-text {
+  animation-delay: 0.4s;
+}
+
+@keyframes line-lift {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.quote-line .black-stand {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+}
+
+.start-quote-screen .author {
+  color: #fff;
+  font-size: 2rem;
+  z-index: 1;
+  opacity: 0;
+  animation: author-name 3s ease forwards;
+}
+
+@keyframes author-name {
+  28% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
