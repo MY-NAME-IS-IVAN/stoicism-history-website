@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase&display=swap');
-
 .start-quote-screen {
   position: absolute;
   font-family: "Cormorant Unicase", serif;
@@ -13,6 +11,7 @@
   flex-direction: column;
   gap: 2rem;
   cursor: pointer;
+  z-index: 100;
 }
 
 .start-quote-screen.disappear{
