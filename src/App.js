@@ -6,8 +6,8 @@ import { StartScreen } from './components/StartScreen/StartScreen';
 function App() {
   return (
     <div>
-      {/* <StartScreen /> */}
-      {/* <ScrollingFooter /> */}
+      <StartScreen />
+      <ScrollingFooter />
       <SlidingImages />
     </div>
   );
