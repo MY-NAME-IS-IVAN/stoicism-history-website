@@ -54,7 +54,7 @@ export const SlidingImages = () => {
               nihil,
             </p>
           </div>
-          <img srcSet={`${MarcusSmall} 640w, ${PorciaMedium} 1920`} alt='' />
+          <img srcSet={`${MarcusSmall} 640w, ${MarcusMedium} 1920`} alt='' />
         </div>
         <div className='picture-container'>
           <div className='info'>
