@@ -1,6 +1,5 @@
 .start-quote-screen {
-  position: absolute;
-  font-family: "Cormorant Unicase", serif;
+  position: fixed;
   background-color: #000000;
   width: 100vw;
   height: 100vh;

@@ -1,0 +1,102 @@
+.silhouettes-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../images/silhouettes/Background.jpg');
+  background-size: cover;
+  position: relative;
+}
+
+.silhouettes-container .pictures-container {
+  width: 50vw;
+  height: 100vh;
+}
+
+.two-sides-container {
+  display: flex;
+  backdrop-filter: saturate(50%) blur(12px) brightness(50%);
+}
+
+.silhouettes-container .text-container {
+  width: 50vw;
+  height: 100vh;
+  color: #fff;
+  padding: 3rem;
+}
+
+.silhouettes-container .text-container .title {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.silhouettes-container .text-container .text {
+  margin-bottom: 1rem;
+}
+
+.pictures-list {
+  list-style-type: none;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3rem;
+}
+
+.pictures-list li {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.pictures-list li:nth-child(1) {
+  transform: rotate(15deg);
+}
+
+.pictures-list li:nth-child(2) {
+  transform: rotate(-10deg);
+}
+
+.pictures-list li:nth-child(3) {
+  transform: rotate(-5deg);
+}
+
+.pictures-list li:nth-child(4) {
+  transform: rotate(-15deg);
+}
+
+.pictures-list li:nth-child(5) {
+  transform: rotate(12deg);
+}
+
+.pictures-list li:nth-child(6) {
+  transform: rotate(-10deg);
+}
+
+.pictures-list img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.pictures-list .main-picture {
+  position: absolute;
+  filter: brightness(1200%);
+  z-index: 1;
+  transition: filter 0.2s ease, transform 0.25s ease;
+  cursor: pointer;
+}
+
+.pictures-list .main-picture:hover {
+  filter: brightness(100%);
+  transform: scale(1.2) rotate(10deg);
+}
+
+.pictures-list .glow-picutre {
+  position: absolute;
+  filter: blur(2px) brightness(500%);
+  transition: transform 0.1s ease;
+}
+
+.pictures-list .main-picture:hover ~ .glow-picutre {
+  transform: scale(1.2) rotate(10deg);
+}

@@ -1,0 +1,106 @@
+.pictures-wall {
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../images/pictures-wall/Background.jpg');
+  background-size: cover;
+  position: relative;
+}
+
+.pictures-wall .blured-background {
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(12px) saturate(50%) brightness(20%);
+}
+
+.pictures-wall h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem;
+  text-transform: uppercase;
+}
+
+.pictures-wall .squares-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pictures-wall .square {
+  position: absolute;
+  width: 180px;
+  height: 250px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: scale 0.25s ease;
+  cursor: default;
+}
+
+.pictures-wall .square.quote:hover {
+  z-index: 5;
+  scale: 1.15;
+}
+
+.pictures-wall .square:nth-child(1) {
+  transform: translate(95px, 196px);
+
+}
+
+.pictures-wall .square:nth-child(2) {
+  transform: translate(-177px, 110px);
+}
+
+.pictures-wall .square:nth-child(10) {
+  transform: translate(110px, -124px);
+}
+
+.pictures-wall .square:nth-child(4) {
+  transform: translate(-145px, -123px);
+  z-index: 1;
+}
+
+.pictures-wall .square:nth-child(5) {
+  transform: translate(0, 0);
+  z-index: 1;
+}
+
+.pictures-wall .square:nth-child(6) {
+  transform: translate(235px, 20px);
+}
+
+.pictures-wall .square:nth-child(7) {
+  transform: translate(-20px, -160px);
+}
+
+.pictures-wall .square:nth-child(8) {
+  transform: translate(-30px, 180px);
+}
+
+.pictures-wall .square:nth-child(9) {
+  transform: translate(-280px, 10px);
+}
+
+.pictures-wall .square:nth-child(3) {
+  transform: translate(145px, -40px);
+  z-index: 1;
+}
+
+.pictures-wall .square img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pictures-wall .square.quote {
+  color: #000;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.pictures-wall .square.quote .author {
+  margin-top: 1rem;
+}
