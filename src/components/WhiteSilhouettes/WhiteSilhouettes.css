@@ -26,6 +26,7 @@
 .silhouettes-container .text-container .title {
   font-size: 4rem;
   margin-bottom: 1.5rem;
+  text-transform: uppercase;
 }
 
 .silhouettes-container .text-container .text {
@@ -72,6 +73,21 @@
   transform: rotate(-10deg);
 }
 
+.images-container {
+  transition: transform 0.15s ease;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.images-container:hover, .images-container.active {
+  transform: scale(1.2) rotate(10deg);
+}
+
+.images-container:active {
+  transform: scale(1.25) rotate(10deg);
+}
+
 .pictures-list img {
   width: 200px;
   height: 200px;
@@ -80,20 +96,31 @@
 
 .pictures-list .main-picture {
   position: absolute;
-  filter: brightness(1200%);
   z-index: 1;
-  transition: filter 0.2s ease, transform 0.25s ease;
   cursor: pointer;
+  filter: brightness(500%);
+  transition: filter 0.25s ease;
 }
 
-.pictures-list .main-picture:hover {
+.images-container:hover .main-picture,
+.images-container.active .main-picture {
   filter: brightness(100%);
-  transform: scale(1.2) rotate(10deg);
+}
+
+.pictures-list .white-picture {
+  position: absolute;
+  z-index: 2;
+  transition: opacity 0.15s ease;
+}
+
+.images-container:hover .white-picture,
+.images-container.active .white-picture {
+  opacity: 0;
 }
 
 .pictures-list .glow-picutre {
   position: absolute;
-  filter: blur(2px) brightness(500%);
+  filter: blur(2px);
   transition: transform 0.1s ease;
 }
 

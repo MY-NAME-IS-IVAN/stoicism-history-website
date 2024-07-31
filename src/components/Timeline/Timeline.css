@@ -1,8 +1,22 @@
 .timeline {
   width: 100vw;
-  min-height: 100vh;
   color: #fff;
   background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../images/timeline/Background.gif');
+  background-size: cover;
+}
+
+.content-container {
+  backdrop-filter: blur(8px) brightness(15%);
+  width: 100%;
+  height: 100%;
+  padding: 3rem 0 4rem 0;
+}
+
+.timeline-parts {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,11 +27,14 @@
   margin-bottom: 5rem;
   text-transform: uppercase;
   position: relative;
+  animation: emerging-element ease;
+  animation-timeline: view();
+  animation-range: entry 0 cover 20%;
 }
-
 
 .timeline h3 {
   margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
 .timeline .text-container {
@@ -28,22 +45,29 @@
   content: '';
   position: absolute;
   left: 0;
-  top: -10px;
+  top: 25px;
   width: 100%;
   height: 1.5px;
   border-radius: 1rem;
   background-color: #fff;
 }
 
-.content-container {
-  padding: 5rem 0;
+.timeline .text-container::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 25px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  transform: translateX(calc(50% + 2.5px)) translateY(-50%);
+  border-radius: 50%;
 }
 
-.filter-background {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+.timeline .side.right .text-container::after {
+  left: 0;
+  transform: translateX(calc(-50% - 2.5px)) translateY(-50%);
+  border-radius: 50%;
 }
 
 .timeline .side {
@@ -51,8 +75,16 @@
   width: 600px;
 }
 
+.timeline .side .text {
+  padding: 0 1rem 0 0;
+}
+
 .timeline .side.right {
   text-align: right;
+}
+
+.timeline .side.right .text {
+  padding: 0 0 1rem 0;
 }
 
 .timeline .separation-line {
@@ -73,9 +105,29 @@
   align-items: flex-end;
   justify-content: center;
   gap: 2rem;
+  animation: emerging-element ease;
+  animation-timeline: view();
+  animation-range: entry 0 cover 25%;
 }
 
 .timeline .number {
   font-size: 7rem;
   font-weight: 700;
+}
+
+.greece-circle {
+  width: 250px;
+  height: 250px;
+  border: 5px #fff solid;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-5px);
+}
+
+.greece-picture {
+  width: 200px;
+  filter: brightness(1000%);
 }
