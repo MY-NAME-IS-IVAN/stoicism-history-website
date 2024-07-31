@@ -3,6 +3,7 @@
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
   padding: 4rem 0;
+  /* background-color: #000; */
 }
 
 @keyframes slide-line-appear {
@@ -70,6 +71,7 @@
   height: 20vw;
   object-fit: cover;
   border-radius: 1.25rem;
+  border: 3px #fff solid;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   transition: filter 0.25s ease;
 }
