@@ -64,3 +64,58 @@
 .introduction .text {
   margin: 1.5rem 0;
 }
+
+@media (max-width: 1200px) {
+  .introduction .text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .filter-container {
+    padding: 2rem;
+  }
+
+  .information-container {
+    width: 70%;
+  }
+
+  .visual-container {
+    width: 30%;
+  }
+}
+
+@media (max-width: 530px) {
+  .filter-container {
+    padding: 1rem;
+    padding-top: 2rem;
+  }
+
+  .introduction .text {
+    margin: 1rem 0;
+  }
+
+  .introduction .title {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .filter-container {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .introduction .text:nth-child(2) {
+    display: none;
+  }
+
+  .introduction .text:nth-child(3) {
+    display: none;
+  }
+
+  .introduction .text {
+    font-size: 1.2rem;
+  }
+}

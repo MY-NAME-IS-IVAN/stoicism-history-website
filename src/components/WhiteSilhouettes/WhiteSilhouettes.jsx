@@ -52,90 +52,106 @@ export const WhiteSilhouettes = () => {
 
   return (
     <div className='silhouettes-container'>
-      <div className='two-sides-container'>
-        <div className='pictures-container'>
-          <ul className='pictures-list'>
-            <li>
-              <div
-                className={`images-container ${
-                  currentItemIndex === 0 ? 'active' : ''
-                }`}
-                onClick={() => setCurrentItemIndex(0)}
-              >
-                <img
-                  className='white-picture'
-                  src={MarcusMeditationsWhite}
-                  alt=''
-                />
-                <img className='main-picture' src={MarcusMeditations} alt='' />
-              </div>
-            </li>
-            <li>
-              <div
-                className={`images-container ${
-                  currentItemIndex === 1 ? 'active' : ''
-                }`}
-                onClick={() => setCurrentItemIndex(1)}
-              >
-                <img className='white-picture' src={ZenoStatueWhite} alt='' />
-                <img className='main-picture' src={ZenoStatue} alt='' />
-              </div>
-            </li>
-            <li>
-              <div
-                className={`images-container ${
-                  currentItemIndex === 2 ? 'active' : ''
-                }`}
-                onClick={() => setCurrentItemIndex(2)}
-              >
-                <img className='white-picture' src={StoaPoikileWhite} alt='' />
-                <img className='main-picture' src={StoaPoikile} alt='' />
-              </div>
-            </li>
-            <li>
-              <div
-                className={`images-container ${
-                  currentItemIndex === 3 ? 'active' : ''
-                }`}
-                onClick={() => setCurrentItemIndex(3)}
-              >
-                <img className='white-picture' src={BustOfSenecaWhite} alt='' />
-                <img className='main-picture' src={BustOfSeneca} alt='' />
-              </div>
-            </li>
-            <li>
-              <div
-                className={`images-container ${
-                  currentItemIndex === 4 ? 'active' : ''
-                }`}
-                onClick={() => setCurrentItemIndex(4)}
-              >
-                <img
-                  className='white-picture'
-                  src={SchoolOfAthensWhite}
-                  alt=''
-                />
-                <img className='main-picture' src={SchoolOfAthens} alt='' />
-              </div>
-            </li>
-            <li>
-              <div
-                className={`images-container ${
-                  currentItemIndex === 5 ? 'active' : ''
-                }`}
-                onClick={() => setCurrentItemIndex(5)}
-              >
-                <img className='white-picture' src={CatoStatueWhite} alt='' />
-                <img className='main-picture' src={CatoStatue} alt='' />
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div className='text-container'>
-          <h2 className='title'>{itemsInformation[currentItemIndex].title}</h2>
-          <p className='text'>
-            {itemsInformation[currentItemIndex].descriptions}
-          </p>
+      <div className='background-blur'>
+        <div className='two-sides-container'>
+          <div className='pictures-container'>
+            <ul className='pictures-list'>
+              <li>
+                <div
+                  className={`images-container ${
+                    currentItemIndex === 0 ? 'active' : ''
+                  }`}
+                  onClick={() => setCurrentItemIndex(0)}
+                >
+                  <img
+                    className='white-picture'
+                    src={MarcusMeditationsWhite}
+                    alt=''
+                  />
+                  <img
+                    className='main-picture'
+                    src={MarcusMeditations}
+                    alt=''
+                  />
+                </div>
+              </li>
+              <li>
+                <div
+                  className={`images-container ${
+                    currentItemIndex === 1 ? 'active' : ''
+                  }`}
+                  onClick={() => setCurrentItemIndex(1)}
+                >
+                  <img className='white-picture' src={ZenoStatueWhite} alt='' />
+                  <img className='main-picture' src={ZenoStatue} alt='' />
+                </div>
+              </li>
+              <li>
+                <div
+                  className={`images-container ${
+                    currentItemIndex === 2 ? 'active' : ''
+                  }`}
+                  onClick={() => setCurrentItemIndex(2)}
+                >
+                  <img
+                    className='white-picture'
+                    src={StoaPoikileWhite}
+                    alt=''
+                  />
+                  <img className='main-picture' src={StoaPoikile} alt='' />
+                </div>
+              </li>
+              <li>
+                <div
+                  className={`images-container ${
+                    currentItemIndex === 3 ? 'active' : ''
+                  }`}
+                  onClick={() => setCurrentItemIndex(3)}
+                >
+                  <img
+                    className='white-picture'
+                    src={BustOfSenecaWhite}
+                    alt=''
+                  />
+                  <img className='main-picture' src={BustOfSeneca} alt='' />
+                </div>
+              </li>
+              <li>
+                <div
+                  className={`images-container ${
+                    currentItemIndex === 4 ? 'active' : ''
+                  }`}
+                  onClick={() => setCurrentItemIndex(4)}
+                >
+                  <img
+                    className='white-picture'
+                    src={SchoolOfAthensWhite}
+                    alt=''
+                  />
+                  <img className='main-picture' src={SchoolOfAthens} alt='' />
+                </div>
+              </li>
+              <li>
+                <div
+                  className={`images-container ${
+                    currentItemIndex === 5 ? 'active' : ''
+                  }`}
+                  onClick={() => setCurrentItemIndex(5)}
+                >
+                  <img className='white-picture' src={CatoStatueWhite} alt='' />
+                  <img className='main-picture' src={CatoStatue} alt='' />
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div className='text-container'>
+            <h2 className='title'>
+              {itemsInformation[currentItemIndex].title}
+            </h2>
+            <p className='text'>
+              {itemsInformation[currentItemIndex].descriptions}
+            </p>
+          </div>
         </div>
       </div>
     </div>

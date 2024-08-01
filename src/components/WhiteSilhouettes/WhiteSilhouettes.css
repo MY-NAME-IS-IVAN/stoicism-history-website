@@ -11,9 +11,18 @@
   height: 100vh;
 }
 
+.background-blur {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: saturate(50%) blur(12px) brightness(50%);
+}
+
 .two-sides-container {
   display: flex;
-  backdrop-filter: saturate(50%) blur(12px) brightness(50%);
+  max-width: 1800px;
 }
 
 .silhouettes-container .text-container {
@@ -80,7 +89,8 @@
   height: 100%;
 }
 
-.images-container:hover, .images-container.active {
+.images-container:hover,
+.images-container.active {
   transform: scale(1.2) rotate(10deg);
 }
 

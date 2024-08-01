@@ -39,6 +39,7 @@
   text-transform: uppercase;
   text-shadow: -1px -1px 0 #fff, 0 -1px 0 #fff, 1px -1px 0 #fff, 1px 0 0 #fff,
     1px 1px 0 #fff, 0 1px 0 #fff, -1px 1px 0 #fff, -1px 0 0 #fff;
+  padding: 0 2rem;
 }
 
 .click-to-continue {
@@ -49,7 +50,7 @@
   font-weight: 700;
   opacity: 0;
   animation: continue-sign-appear 1s ease forwards;
-  animation-delay: 3.5s;
+  animation-delay: 3s;
 }
 
 @keyframes continue-sign-appear {
@@ -62,7 +63,6 @@
     transform: translateY(-10px);
   }
 }
-
 
 .line-text-white {
   position: absolute;
@@ -82,7 +82,6 @@
 }
 
 .quote-line {
-  line-height: 100px;
   position: relative;
 }
 
@@ -138,5 +137,38 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width: 1400px) {
+  .start-quote {
+    font-size: 5rem;
+  }
+
+  .quote-line .line-text {
+    line-height: 80px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .start-quote {
+    font-size: 4rem;
+  }
+
+  .quote-line .line-text {
+    line-height: 70px;
+  }
+}
+
+@media (max-width: 720px) {
+  .start-quote {
+    font-size: 2rem;
+
+    text-shadow: -0.5px -0.5px 0 #fff, 0 -0.5px 0 #fff, 0.5px -0.5px 0 #fff, 0.5px 0 0 #fff,
+    0.5px 0.5px 0 #fff, 0 0.5px 0 #fff, -0.5px 0.5px 0 #fff, -0.5px 0 0 #fff;
+  }
+
+  .quote-line .line-text {
+    line-height: 50px;
   }
 }
