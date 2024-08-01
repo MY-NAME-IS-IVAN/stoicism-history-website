@@ -68,11 +68,6 @@ export const WhiteSilhouettes = () => {
                   alt=''
                 />
                 <img className='main-picture' src={MarcusMeditations} alt='' />
-                <img
-                  className='glow-picutre'
-                  src={MarcusMeditationsWhite}
-                  alt=''
-                />
               </div>
             </li>
             <li>
@@ -84,7 +79,6 @@ export const WhiteSilhouettes = () => {
               >
                 <img className='white-picture' src={ZenoStatueWhite} alt='' />
                 <img className='main-picture' src={ZenoStatue} alt='' />
-                <img className='glow-picutre' src={ZenoStatueWhite} alt='' />
               </div>
             </li>
             <li>
@@ -96,7 +90,6 @@ export const WhiteSilhouettes = () => {
               >
                 <img className='white-picture' src={StoaPoikileWhite} alt='' />
                 <img className='main-picture' src={StoaPoikile} alt='' />
-                <img className='glow-picutre' src={StoaPoikileWhite} alt='' />
               </div>
             </li>
             <li>
@@ -108,7 +101,6 @@ export const WhiteSilhouettes = () => {
               >
                 <img className='white-picture' src={BustOfSenecaWhite} alt='' />
                 <img className='main-picture' src={BustOfSeneca} alt='' />
-                <img className='glow-picutre' src={BustOfSenecaWhite} alt='' />
               </div>
             </li>
             <li>
@@ -124,11 +116,6 @@ export const WhiteSilhouettes = () => {
                   alt=''
                 />
                 <img className='main-picture' src={SchoolOfAthens} alt='' />
-                <img
-                  className='glow-picutre'
-                  src={SchoolOfAthensWhite}
-                  alt=''
-                />
               </div>
             </li>
             <li>
@@ -140,7 +127,6 @@ export const WhiteSilhouettes = () => {
               >
                 <img className='white-picture' src={CatoStatueWhite} alt='' />
                 <img className='main-picture' src={CatoStatue} alt='' />
-                <img className='glow-picutre' src={CatoStatueWhite} alt='' />
               </div>
             </li>
           </ul>

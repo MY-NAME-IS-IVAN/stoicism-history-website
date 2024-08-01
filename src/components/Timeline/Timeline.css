@@ -107,7 +107,7 @@
   gap: 2rem;
   animation: emerging-element ease;
   animation-timeline: view();
-  animation-range: entry 0 cover 25%;
+  animation-range: entry 0 cover 50%;
 }
 
 .timeline .number {

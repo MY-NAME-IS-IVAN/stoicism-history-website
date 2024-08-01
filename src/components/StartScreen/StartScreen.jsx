@@ -9,6 +9,7 @@ export const StartScreen = () => {
       className={`start-quote-screen ${screenToDisappear ? 'disappear' : ''}`}
       onClick={() => setScreenToDisappear(true)}
     >
+      <p className='click-to-continue'>Click To Continue</p>
       <div className='start-quote'>
         <div className='quote-line'>
           <div className='line-text'>
