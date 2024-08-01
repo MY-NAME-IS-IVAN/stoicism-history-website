@@ -10,13 +10,13 @@ import { WhiteSilhouettes } from './components/WhiteSilhouettes/WhiteSilhouettes
 function App() {
   return (
     <div>
-      {/* <StartScreen /> */}
-      {/* <Introduction /> */}
-      {/* <SlidingImages /> */}
-      {/* <Timeline /> */}
+      <StartScreen />
+      <Introduction />
+      <SlidingImages />
+      <Timeline />
       <WhiteSilhouettes />
-      {/* <PicturesWall /> */}
-      {/* <ScrollingFooter /> */}
+      <PicturesWall />
+      <ScrollingFooter />
     </div>
   );
 }

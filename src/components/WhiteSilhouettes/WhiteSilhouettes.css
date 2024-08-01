@@ -1,6 +1,6 @@
 .silhouettes-container {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url('../../images/silhouettes/Background.jpg');
   background-size: cover;
   position: relative;
@@ -136,4 +136,72 @@
 
 .pictures-list .main-picture:hover ~ .glow-picutre {
   transform: scale(1.2) rotate(10deg);
+}
+
+@media (max-width: 1450px) {
+  .pictures-list {
+    column-gap: 2rem;
+  }
+
+  .pictures-list li {
+    width: 150px;
+    height: 150px;
+  }
+
+  .pictures-list img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .background-blur {
+    display: block;
+    padding-bottom: 3rem;
+  }
+
+  .silhouettes-container .text-container .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .two-sides-container {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .silhouettes-container .text-container {
+    width: 100vw;
+    height: unset;
+  }
+
+  .silhouettes-container .pictures-container {
+    width: 100vw;
+    height: unset;
+    padding: 0 2rem;
+  }
+
+  .pictures-list {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .silhouettes-container .text-container .title {
+    font-size: 1.2rem;
+  }
+
+  .pictures-list li {
+    width: 100px;
+    height: 100px;
+  }
+
+  .pictures-list img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .silhouettes-container .pictures-container {
+    padding: 0 0.5rem;
+  }
 }

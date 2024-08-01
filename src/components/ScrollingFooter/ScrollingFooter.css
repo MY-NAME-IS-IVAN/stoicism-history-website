@@ -14,7 +14,7 @@
 .scroll-text-container .author {
   position: absolute;
   right: 0.5rem;
-  top: 0.5rem;
+  top: 10px;
   color: #fff;
   padding-left: 1rem;
   padding-bottom: 0.75rem;
@@ -37,5 +37,43 @@
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 1000px) {
+  .scroll-text-container {
+    height: 7rem;
+  }
+
+  .scroll-text {
+    font-size: 4.5rem;
+  }
+
+  .scroll-text-container .author {
+    top: 5px;
+    font-size: 0.75rem;
+  }
+
+  .scroll-text {
+    animation: footer-scroll 27s linear infinite;
+  }
+}
+
+@media (max-width: 420px) {
+  .scroll-text-container {
+    height: 4.5rem;
+  }
+
+  .scroll-text {
+    font-size: 2.5rem;
+  }
+
+  .scroll-text-container .author {
+    top: 2.5px;
+    font-size: 0.5rem;
+  }
+
+  .scroll-text {
+    animation: footer-scroll 20s linear infinite;
   }
 }
