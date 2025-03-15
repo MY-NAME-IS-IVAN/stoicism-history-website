@@ -1,1 +1,1 @@
-I want to get a job at BIG TECH, and LeetCode is a great way to practice data structures and algorithms for interviews. But with over 3,400 problems on LeetCode, I don&apos;t have the time to solve them all. So, I asked ChatGPT and Gemini to create a list of 150 problems that will maximize my chances of landing an entry-level software developer role at MAANG. While LeetCode offers personalized lists, I wanted to build something myself. Here&apos;s the list!
+A nice-looking website that explains what stoicism is, how it emerged and its ideas.
